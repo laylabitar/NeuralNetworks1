@@ -27,6 +27,7 @@ api_key='qzCAcE28n6jeMkmXS1Mn'
 chart_studio.tools.set_credentials_file(username=username, api_key=api_key)
 
 app = dash.Dash(__name__)
+server = app.server
 
 # Generate noisy points resembling a parabola shape (fixed and not changing)
 x_noise = np.arange(-10, 11, 0.1)
